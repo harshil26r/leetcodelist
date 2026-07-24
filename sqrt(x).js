@@ -9,6 +9,7 @@ For example, do not use pow(x, 0.5) in c++ or x ** 0.5 in python
  * @return {number}
  */
 var mySqrt = function (x) {
+  if (x < 2) return x;
   let start = 1;
   let end = Math.floor(x / 2);
   let ans = 0;
